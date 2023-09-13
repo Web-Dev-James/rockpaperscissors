@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Rock|Paper|Scissor</title>
+</head>
+<body>
+    <div class="container">
+        <div class="main-result">
+            <p type="text" class="inputResult" id="inputResult"></p>
+            <span class="you">YOU</span>
+            <p type="text" name="" class="computerResult" id="computerResult"></p>
+            <span class= 'computer'>COMPUTER</span>
+            <input type="hidden" name="" id="hiddenInputResult">
+            <input type="hidden" name="" id="hiddenComputerResult">
+            <button onclick="goButton()" id="submitButton" class="goButton">Submit!</button>
+            <span id='v'>V</span>
+            <span id ='s'>S</span>
+        </div>
+        <div class="main-choices">
+            <div class="choices itemRock"><p id="rock" onclick="pickRock()">ROCK</p></div>
+            <div class="choices itemPaper"><p id="paper" onclick="pickPaper()">PAPER</p></div>
+            <div class="choices itemScissor"><p id="scissor" onclick="pickScissor()">SCISSOR</p></div>
+
+
+        </div>
+
+                <div class="modal-body">
+                    <p class="modal-paragraph" id="modal-paragraph"></p>
+                    <a href="index.html">Reload</a>
+                </div>
+
+
+
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
